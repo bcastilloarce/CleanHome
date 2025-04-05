@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Servicios de Limpieza BrillaMás</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+      color: #333;
+    }
+    header {
+      background-color: #4CAF50;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    section {
+      padding: 20px;
+    }
+    h2 {
+      color: #4CAF50;
+    }
+    .servicio {
+      background-color: white;
+      padding: 15px;
+      margin-bottom: 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    form input, form textarea, form button {
+      width: 100%;
+      padding: 10px;
+      margin: 5px 0;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    .comentarios {
+      background-color: #e8f5e9;
+      padding: 15px;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>BrillaMás - Servicios de Limpieza Profesional</h1>
+    <p>Tu hogar limpio, tu mente tranquila</p>
+  </header>
+
+  <section>
+    <h2>Servicios</h2>
+    <div class="servicio">
+      <h3>Limpieza Simple</h3>
+      <p>Ideal para mantenimiento semanal: aspirado, limpieza de superficies, baños y cocina superficial.</p>
+    </div>
+    <div class="servicio">
+      <h3>Limpieza Completa</h3>
+      <p>Incluye limpieza de vidrios, interiores de muebles, aspirado profundo, y desinfección de áreas clave.</p>
+    </div>
+    <div class="servicio">
+      <h3>Limpieza Profunda</h3>
+      <p>Perfecta para mudanzas o cambios de estación. Incluye limpieza exhaustiva en todas las superficies y rincones.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Agendamiento</h2>
+    <form>
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required>
+
+      <label for="fecha">Fecha preferida:</label>
+      <input type="date" id="fecha" name="fecha" required>
+
+      <label for="servicio">Tipo de servicio:</label>
+      <select id="servicio" name="servicio" required>
+        <option value="simple">Limpieza Simple</option>
+        <option value="completa">Limpieza Completa</option>
+        <option value="profunda">Limpieza Profunda</option>
+      </select>
+
+      <label for="comentarios">Comentarios adicionales:</label>
+      <textarea id="comentarios" name="comentarios" rows="4"></textarea>
+
+      <button type="submit">Agendar Servicio</button>
+    </form>
+  </section>
+
+  <section>
+    <h2>Comentarios de Clientes</h2>
+    <div class="comentarios">
+      <p><strong>María P.:</strong> ¡Excelente servicio! Dejaron mi departamento impecable. Puntuales y muy amables.</p>
+    </div>
+    <div class="comentarios">
+      <p><strong>Jorge L.:</strong> Pedí una limpieza profunda antes de arrendar mi casa y quedó como nueva. Recomendadísimo.</p>
+    </div>
+    <div class="comentarios">
+      <p><strong>Daniela R.:</strong> Me encantó que fueran tan detallistas. Volveré a agendar sin duda.</p>
+    </div>
+  </section>
+</body>
+</html>
